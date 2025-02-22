@@ -2516,84 +2516,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1933624222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &819118703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 819118704}
-  - component: {fileID: 819118705}
-  m_Layer: 6
-  m_Name: ColliderFake1 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &819118704
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819118703}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.994, y: 2.518, z: 0}
-  m_LocalScale: {x: 18.8, y: 3, z: 4}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1301208621}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &819118705
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819118703}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
 --- !u!1 &898319905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2641,11 @@ Transform:
   - {fileID: 1209967129765983835}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &950110740 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3301869259521921828, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+  m_PrefabInstance: {fileID: 3638774190381252580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &952261668
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,7 +3165,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1135106343}
-  - {fileID: 819118704}
   m_Father: {fileID: 595002897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330646381
@@ -17190,6 +17116,7 @@ GameObject:
   - component: {fileID: 1628789331}
   - component: {fileID: 1628789333}
   - component: {fileID: 1628789334}
+  - component: {fileID: 1628789335}
   m_Layer: 6
   m_Name: platform-long
   m_TagString: Untagged
@@ -17326,6 +17253,52 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 0.26, y: 0.5}
+  m_EdgeRadius: 0
+--- !u!61 &1628789335
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628789330}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.16}
+    newSize: {x: 0.32, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
 --- !u!1 &1720059786
 GameObject:
@@ -17958,7 +17931,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1936184519966543536, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.83
+      value: 16.9
       objectReference: {fileID: 0}
     - target: {fileID: 1936184519966543536, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17996,6 +17969,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1984761506880279836, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.20286363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984761506880279836, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984761506880279836, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0035681725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984761506880279836, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042557744465289454, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: Speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042557744465289454, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: easing
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042557744465289454, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: Distance
+      value: 21.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042557744465289454, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: Distance2
+      value: 16.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042557744465289454, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
+      propertyPath: GemRender
+      value: 
+      objectReference: {fileID: 950110740}
     - target: {fileID: 4655941586197261189, guid: 70151327b10d9cc4590a3ee1712e3fe8, type: 3}
       propertyPath: m_Name
       value: CherryHealth
